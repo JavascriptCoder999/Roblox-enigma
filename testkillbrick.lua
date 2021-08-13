@@ -4,5 +4,4 @@ local function trapWasTouched (otherPart)
 		humanoid.Health=0
 		end
 	end
-end
 script.Parent.Touched:Connect(trapWasTouched)
