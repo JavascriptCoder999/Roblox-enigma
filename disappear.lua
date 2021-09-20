@@ -1,12 +1,12 @@
 local part=script.Parent
 local function onPartTouched(othertPart)
 	while part.Transparency<1 do
-		part.Transparency+=0.05
+		part.Transparency+=0.05 --you can increase the speed of disappearing  from 0.05 to higher
 		wait(0.1)
 	end
-end
-if part.Transparency>=1 then
-	part.CanCollide=false
+	if part.Transparency>=1 then
+		part.CanCollide=false
+	end
 end
 part.Touched:Connect(onPartTouched)
 --add part preferably near spawn then put this script in script in part
