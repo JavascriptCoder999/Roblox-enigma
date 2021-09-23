@@ -27,3 +27,23 @@ for x=0,4,1 do
 	end
 end
 --put this script in script in workspace
+
+local part=script.Parent
+local function remakeblock()
+	part.CanCollide=false
+	part.Transparency=0
+end
+local function onPartTouched(othertPart)
+	while part.Transparency<1 do
+		part.Transparency+=0.05
+		wait(0.1)
+	end
+	if part.Transparency>=1 then
+		part.CanCollide=true
+	end
+	wait(8) --8 can be changed to other numbers
+	remakeblock()
+end
+
+part.Touched:Connect(onPartTouched)
+--code for if you want it do reapper after you die.
