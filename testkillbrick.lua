@@ -1,5 +1,5 @@
 local function trapWasTouched (otherPart)
-	local humanoid=otherPart.parent:FindFirstChildWhichInA("Humanoid")
+	local humanoid=otherPart.Parent:FindFirstChild("Humanoid")
 	if humanoid then
 		humanoid.Health=0
 		end
