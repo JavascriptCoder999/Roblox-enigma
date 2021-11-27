@@ -12,3 +12,4 @@ for childIndex,child in pairs(character:GetChildren())do
 		end)
 	end
 end
+--(LocalScript)
