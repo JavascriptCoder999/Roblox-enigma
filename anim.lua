@@ -11,3 +11,5 @@ humanoid.Running:Connect(function(speed)
 		walkAnimTrack:Stop()
 	end
 end)
+--only works if you use animation editor and copy the id and put the animation inside the local script
+--has to be local script
