@@ -1,3 +1,5 @@
+--how u get points in roblox
+--add scripts into server script service
 local DataStoreService=game:GetService("DataStoreService")
 local playerData=DataStoreService:GetDataStore("PlayerData")
 local function onPlayerJoin(player)
@@ -27,3 +29,4 @@ local function onPlayerExit(player)
 end
 game.Players.PlayerAdded:Connect(onPlayerJoin)
 game.Players.PlayerRemoving:Connect(onPlayerExit)
+--go to leaderstats.lua for next scriopt...
