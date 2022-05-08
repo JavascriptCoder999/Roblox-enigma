@@ -16,3 +16,6 @@ local function onPartTouch(humanPart)
 	end
 end
 part.Touched:Connect(onPartTouch)
+--Duplicated for every upgrade, to make upgrade use same code just:
+--Line 10&11, change cost from 100 to cost of button
+--Line 17, change 1 to 2 for upgrade 2 and 3 for upgrade 3 and so on
